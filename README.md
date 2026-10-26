@@ -48,4 +48,4 @@ A 版＝用戶口吻的問句標題，B 版＝品牌型標題，同一組 contex
 | `push_stockvoice_v5_click.py`, `copy_stockvoice_v5_by_country.py`, `push_sv_v6_func_*.py`, `update_sv_v5_country_utm.py` | OpenAI Ads API 自動化：建立 campaign／ad group／ad、跨國複製、批次改 UTM 與 hint（一律以 paused 建立） |
 | `sv_*_plan.json` | 各次上架的投放計畫（campaign 結構、hint、文案、UTM） |
 
-API 金鑰與原始 API 回傳檔不在 repo 內。
+
