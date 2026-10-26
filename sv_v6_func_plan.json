@@ -1,0 +1,920 @@
+[
+ {
+  "campaign_id": "cmpn_36b27a64ff4881999bb5b283b33e94db",
+  "campaign": "STOCKVOICE_US_CONTEXT_CLICK_V5",
+  "ad_groups": [
+   {
+    "source_id": "adgrp_231a1358a61481998b98ca9f4e3d497d",
+    "name": "g01_buy_after_rally_func",
+    "context_hints": [
+     "股声把华语KOL过去对一只美股的观点叠在真实股价走势上，适合股价创新高、犹豫要不要追高时，先看各方在类似高点说过什么。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_7a9abc0652f481918772e15d39b03ea4",
+      "name": "SV_G01_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "涨了这么多，是基本面还是情绪？",
+       "body": "怕错过，又怕追高？先了解上涨背后的原因、弄清楚这波涨的理由、市场的不同观点与风险，看清热度之外的依据。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000d75081f59bf6e89140867e3c",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_58a1b3f3ec10819a99fa9c85ce47c5a0",
+      "name": "SV_G01_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：追高前看各方当时怎么说",
+       "body": "追高前，先看华语KOL在类似高点说过什么，观点叠在真实走势上对照。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000006248822f867dab75e54b2595",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_05929812632c819982fe5b88a9b20bd7",
+    "name": "g02_hold_or_cut_func",
+    "context_hints": [
+     "股声汇总华语KOL对单一美股看多、看空、中性的人数（多空温度）与讨论串理由，适合持股被套、在认赔和继续持有之间犹豫的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_47a76896d9fc8197a0641a2464739e5d",
+      "name": "SV_G02_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "被套之后，除了等回本还能怎么想？",
+       "body": "下跌消息很多，解释却不一样？学习梳理事件背景、信息来源与不同观点，分清事实和推测。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000005f481f485d2d7313aaa5575",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_db90601d0e4c81998b7015d2ff3f05b6",
+      "name": "SV_G02_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：被套时看看多空各几位",
+       "body": "被套时，先看华语KOL最近看多看空各几位、理由是什么，多空温度和走势一起看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000073588230a72759907fe00640",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_4c6340bc83d48199a40c4c83a74e0693",
+    "name": "g04_take_profit_func",
+    "context_hints": [
+     "股声的多空温度显示还看多一只美股的华语KOL有几位、理由有没有变，适合帐面大赚、在想要不要落袋的持股人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_205effc1cac0819aaf2d2d4e2b5fff97",
+      "name": "SV_G04_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "赚了一倍，要不要先落袋？",
+       "body": "一只股票快占账户一半，卖了又怕再涨。先定睡得着的比例，再决定卖多少。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000a7d0820e8ade90f22d70c377",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_3f635d0ecef881a194a5b4c0553b24fa",
+      "name": "SV_G04_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：落袋前看多空有没有变",
+       "body": "落袋前，先看华语KOL现在还看多的有几位、理由变了没，多空温度和走势一起看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000004bf081f5acbae5a31b59ca59",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_7b025c79ce388199adcfe0cecc12af82",
+    "name": "g06_everyone_talking_func",
+    "context_hints": [
+     "股声的近24小时热度榜列出被最多华语KOL讨论的美股与理由，适合身边都在聊某只热门股、想先知道大家在讲什么的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_ac38da1f956c819087997a0288a6857d",
+      "name": "SV_G06_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "群里都在买，现在上车会不会太晚？",
+       "body": "群里的收益故事很吸引人？先看看大家关注它的理由与不同意见，分清讨论热度和信息依据。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000e92c8211bda1d19730498a52",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_98e125e967bc819c9c548ce180634782",
+      "name": "SV_G06_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：美股社群讨论热度看板",
+       "body": "整合华语KOL的市场观点与公开讨论，近24小时热度、多空理由一页看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000002b6c8230962d5d32d38b9390",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_4b964ef2228881998d3c01057cff5876",
+    "name": "g08_before_after_earnings_func",
+    "context_hints": [
+     "股声在财报前后汇总华语KOL对一只美股的解读与多空温度变化，适合财报季犹豫财报前或财报后进场的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_5272d4042b9481909d26e16fc8cf3eb4",
+      "name": "SV_G08_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "财报前后，哪些信息不一样？",
+       "body": "期望值高时，好也可能跌。先想好要看哪几个财报数字，再看各方怎么解读。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000124c820e9f6eb658383e2063",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_92c274f67274819f9514ca98858301f4",
+      "name": "SV_G08_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：财报前后看各方怎么解读",
+       "body": "财报前后，先看华语KOL对这只怎么解读、多空温度有没有变，再对照真实走势。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000099a481f5ba802198dcfdb193",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_63704a9e73888199984c34f62eaf7720",
+    "name": "g10_market_panic_or_heat_func",
+    "context_hints": [
+     "股声汇总华语KOL对 SPY、QQQ 的看多看空人数与理由，适合大盘急跌或担心过热时想知道别人怎么看的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_efab47465c248193bb8bec8b194eb1c0",
+      "name": "SV_G10_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "美股大跌，情况真有那么糟？",
+       "body": "大跌新闻让人担心？先区分整体市场与个别股票的变化，了解新闻背景与不同观点。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000475881f6a033e64b6b7a2795",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_62253f107178819db46e372b9bef224f",
+      "name": "SV_G10_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：慌的时候看SPY、QQQ多空",
+       "body": "大跌时，先看华语KOL对SPY、QQQ的看多看空人数，再对照真实走势。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000ad8881f585ff5bc7c4737f13",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "campaign_id": "cmpn_e289538f381081a295fb6b7058b6af4b",
+  "campaign": "STOCKVOICE_US_CONTEXT_CLICK_V5_US",
+  "ad_groups": [
+   {
+    "source_id": "adgrp_d381dc06a85c81a2903e6e015d948186",
+    "name": "g01_buy_after_rally_func",
+    "context_hints": [
+     "股声把华语KOL过去对一只美股的观点叠在真实股价走势上，适合股价创新高、犹豫要不要追高时，先看各方在类似高点说过什么。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_235f71c94ea4819c9e2f1bf1ffe9ff6a",
+      "name": "SV_G01_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "涨了这么多，是基本面还是情绪？",
+       "body": "怕错过，又怕追高？先了解上涨背后的原因、弄清楚这波涨的理由、市场的不同观点与风险，看清热度之外的依据",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000d75081f59bf6e89140867e3c",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_a077ff73854c81968a2d97b199d818f1",
+      "name": "SV_G01_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：追高前看各方当时怎么说",
+       "body": "追高前，先看华语KOL在类似高点说过什么，观点叠在真实走势上对照。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000006248822f867dab75e54b2595",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_86309aa5969c81a2b5e0d5f93821c587",
+    "name": "g02_hold_or_cut_func",
+    "context_hints": [
+     "股声汇总华语KOL对单一美股看多、看空、中性的人数（多空温度）与讨论串理由，适合持股被套、在认赔和继续持有之间犹豫的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_ab3e261738f4819f8b002e392db78856",
+      "name": "SV_G02_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "被套之后，除了等回本还能怎么做？",
+       "body": "下跌消息很多，解释却不一样？学习梳理事件背景、信息来源与不同观点，分清事实和推测",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000005f481f485d2d7313aaa5575",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_156d55813580819eb92f9fdb72aad874",
+      "name": "SV_G02_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：被套时，看KOL多空看法",
+       "body": "被套时，看看华语KOL几位看多、几位看空，理由各是什么，再对照多空温度和走势。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000073588230a72759907fe00640",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_00f89110b8f881a2967720bd250832de",
+    "name": "g04_take_profit_func",
+    "context_hints": [
+     "股声的多空温度显示还看多一只美股的华语KOL有几位、理由有没有变，适合帐面大赚、在想要不要落袋的持股人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_0981364dd9f881969c4a7c05f34428db",
+      "name": "SV_G04_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "赚了一倍，要不要先落袋？",
+       "body": "一只股票快占账户一半，卖了又怕再涨。先定睡得着的比例，再决定卖多少。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000a7d0820e8ade90f22d70c377",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_5f16fc931da8819caacda6d12e00e16b",
+      "name": "SV_G04_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：落袋前看多空有没有变",
+       "body": "落袋前，先看华语KOL现在还看多的有几位、理由变了没，多空温度和走势一起看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000004bf081f5acbae5a31b59ca59",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_a9f8c8d1483881a2a56a825621c6bf25",
+    "name": "g06_everyone_talking_func",
+    "context_hints": [
+     "股声的近24小时热度榜列出被最多华语KOL讨论的美股与理由，适合身边都在聊某只热门股、想先知道大家在讲什么的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_f5fb0e5f496c819aba89fed50e58ca4d",
+      "name": "SV_G06_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "群里都在买，现在上车太晚吗？",
+       "body": "別人的收益故事很吸引人？先看看大家关注它的理由与不同意见，分清讨论热度和信息依据",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000e92c8211bda1d19730498a52",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_a204a1543cfc81958c5073739c3e013c",
+      "name": "SV_G06_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：美股社群讨论热度看板",
+       "body": "整合华语KOL的市场观点与公开讨论，近24小时热度、多空理由一次看",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000002b6c8230962d5d32d38b9390",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_58902241490481a28eb2b1a4449f7778",
+    "name": "g08_before_after_earnings_func",
+    "context_hints": [
+     "股声在财报前后汇总华语KOL对一只美股的解读与多空温度变化，适合财报季犹豫财报前或财报后进场的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_4f9c9714f5d481a29d7a4b5d437fdffd",
+      "name": "SV_G08_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "财报前后，哪些信息不一样？",
+       "body": "期望值高时，好也可能跌。先想好要看哪几个财报数字，再看各方怎么解读",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000124c820e9f6eb658383e2063",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_89922a826360819c86e8e767e97cd2c4",
+      "name": "SV_G08_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：财报前后了解各方看法",
+       "body": "财报前后，先看华语KOL怎么解读、多空情绪有没有变，再对照真实走势",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000099a481f5ba802198dcfdb193",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_6916845a855881a2b66973c96c811fbd",
+    "name": "g10_market_panic_or_heat_func",
+    "context_hints": [
+     "股声汇总华语KOL对 SPY、QQQ 的看多看空人数与理由，适合大盘急跌或担心过热时想知道别人怎么看的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_30607b869678819d80c79c3a195f7c30",
+      "name": "SV_G10_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "美股大跌，情况真有那么糟？",
+       "body": "大跌新闻让人担心？先区分整体市场与个别股票的变化，了解新闻背景与不同观点",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000475881f6a033e64b6b7a2795",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_574fc3be52f0819b90d5e5b4de48fd23",
+      "name": "SV_G10_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：慌的时候看SPY、QQQ多空",
+       "body": "大跌时，先看华语KOL对SPY、QQQ的看多看空人数，再对照真实走势。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000ad8881f585ff5bc7c4737f13",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_usa_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "campaign_id": "cmpn_70810647a0e4819ca9c4cc07260c8dd8",
+  "campaign": "STOCKVOICE_CA_CONTEXT_CLICK_V5_CA",
+  "ad_groups": [
+   {
+    "source_id": "adgrp_04ce17548f80819cbc35f3cc16c6ba0d",
+    "name": "g01_buy_after_rally_func",
+    "context_hints": [
+     "股声把华语KOL过去对一只美股的观点叠在真实股价走势上，适合股价创新高、犹豫要不要追高时，先看各方在类似高点说过什么。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_9dc6552e7774819b9f0f29c04719d89d",
+      "name": "SV_G01_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "涨了这么多，是基本面还是情绪？",
+       "body": "怕错过，又怕追高？先了解上涨背后的原因、弄清楚这波涨的理由、市场的不同观点与风险，看清热度之外的依据。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000d75081f59bf6e89140867e3c",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_ab7816eb9ec08195a3ea1495e9268056",
+      "name": "SV_G01_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：追高前看各方当时怎么说",
+       "body": "追高前，先看华语KOL在类似高点说过什么，观点叠在真实走势上对照。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000006248822f867dab75e54b2595",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g01_buy_after_rally_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_35fab862c640819c9788447c5e8a4858",
+    "name": "g02_hold_or_cut_func",
+    "context_hints": [
+     "股声汇总华语KOL对单一美股看多、看空、中性的人数（多空温度）与讨论串理由，适合持股被套、在认赔和继续持有之间犹豫的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_41defbe1340c81a0a0a8dba873c92cc0",
+      "name": "SV_G02_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "被套之后，除了等回本还能怎么想？",
+       "body": "下跌消息很多，解释却不一样？学习梳理事件背景、信息来源与不同观点，分清事实和推测",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000005f481f485d2d7313aaa5575",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_cc0644de9e7c8196b6bcbb8a6c631e6c",
+      "name": "SV_G02_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：被套时看看多空各几位",
+       "body": "被套时，先看华语KOL最近看多看空各几位、理由是什么，多空温度和走势一起看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000073588230a72759907fe00640",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g02_hold_or_cut_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_8b29e43e87bc819cb1aa45595303d7a1",
+    "name": "g04_take_profit_func",
+    "context_hints": [
+     "股声的多空温度显示还看多一只美股的华语KOL有几位、理由有没有变，适合帐面大赚、在想要不要落袋的持股人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_f052a554347c819d9de0185a33e37c62",
+      "name": "SV_G04_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "赚了一倍，要不要先落袋？",
+       "body": "一只股票快占账户一半，卖了又怕再涨。先定睡得着的比例，再决定卖多少。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000a7d0820e8ade90f22d70c377",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_0dcb6b139d6081a38b297b68e000978b",
+      "name": "SV_G04_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：落袋前看多空有没有变",
+       "body": "落袋前，先看华语KOL现在还看多的有几位、理由变了没，多空温度和走势一起看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000004bf081f5acbae5a31b59ca59",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g04_take_profit_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_4dbcb1289f8c819c993ff45e1c32dc42",
+    "name": "g06_everyone_talking_func",
+    "context_hints": [
+     "股声的近24小时热度榜列出被最多华语KOL讨论的美股与理由，适合身边都在聊某只热门股、想先知道大家在讲什么的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_04c4b47adaec8195881f8c73326add98",
+      "name": "SV_G06_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "群里都在买，他们看中了什么？",
+       "body": "群里的收益故事很吸引人？先看看大家关注它的理由与不同意见，分清讨论热度和信息依据",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000e92c8211bda1d19730498a52",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_c35c27625ba88196a9557ed300049553",
+      "name": "SV_G06_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：美股社群讨论热度看板",
+       "body": "整合华语KOL的市场观点与公开讨论，近24小时热度、多空理由一页看。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_000000002b6c8230962d5d32d38b9390",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g06_everyone_talking_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_0a91eac3afa0819cab5440e8f4ac9404",
+    "name": "g08_before_after_earnings_func",
+    "context_hints": [
+     "股声在财报前后汇总华语KOL对一只美股的解读与多空温度变化，适合财报季犹豫财报前或财报后进场的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_e927eb9beedc819a9d3a0fb5139ef76b",
+      "name": "SV_G08_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "财报前后，哪些信息不一样？",
+       "body": "期望值高时，好也可能跌。先想好要看哪几个财报数字，再看各方怎么解读。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000124c820e9f6eb658383e2063",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_c69e048939a48197b6a27c264cb6722b",
+      "name": "SV_G08_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：财报前后看各方怎么解读",
+       "body": "财报前后，先看华语KOL对这只怎么解读、多空温度有没有变，再对照真实走势。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_0000000099a481f5ba802198dcfdb193",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g08_before_after_earnings_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   },
+   {
+    "source_id": "adgrp_ab8544bb4644819c89198b5ebec5b6ec",
+    "name": "g10_market_panic_or_heat_func",
+    "context_hints": [
+     "股声汇总华语KOL对 SPY、QQQ 的看多看空人数与理由，适合大盘急跌或担心过热时想知道别人怎么看的人。"
+    ],
+    "bidding_config": {
+     "billing_event_type": "click",
+     "strategy": "maximize_clicks"
+    },
+    "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}",
+    "ads": [
+     {
+      "source_id": "ad_88d981be173c8193b7f3475a0755a960",
+      "name": "SV_G10_A_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "美股大跌，情况有多糟？",
+       "body": "大跌新闻让人担心？先区分整体市场与个别股票的变化，了解新闻背景与不同观点",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000475881f6a033e64b6b7a2795",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}"
+     },
+     {
+      "source_id": "ad_af2425c0d1b8819891f56bdc1c9599aa",
+      "name": "SV_G10_B_CLICK_V6_FUNC",
+      "creative": {
+       "type": "chat_card",
+       "title": "股声：慌的时候看SPY、QQQ多空",
+       "body": "大跌时，先看华语KOL对SPY、QQQ的看多看空人数，再对照真实走势。",
+       "target_url": "https://stockvoice.cmoney.tw/",
+       "file_id": "file_00000000ad8881f585ff5bc7c4737f13",
+       "image_crop": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 0
+       }
+      },
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_ca_context_click&utm_term=g10_market_panic_or_heat_func&utm_content={ad_id}&utm_id={campaign_id}"
+     }
+    ]
+   }
+  ]
+ }
+]

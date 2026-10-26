@@ -1,0 +1,25 @@
+﻿ad_name,key,object,round1_img,round1_seen,round1_matches,redraw,round2_img,round2_seen,final_matches,recognize_situation
+SV_G01_A_CLICK_V5,G01_A,山顶旗,I17,山顶插旗,Y,,I09,山顶插旗,Y,Y
+SV_G01_B_CLICK_V5,G01_B,录音带,I08,卡带（倒带符号）,Y,,I13,卡带,Y,Y
+SV_G02_A_CLICK_V5,G02_A,雨伞,I02,雨中的伞,Y,,I18,雨中的伞,Y,Y
+SV_G02_B_CLICK_V5,G02_B,天平,I22,天平,Y,,I10,天平，蓝珠那边沉,Y,Y
+SV_G03_A_CLICK_V5,G03_A,购物车,I23,购物车,Y,,I01,购物车（一件正掉进去）,Y,Y
+SV_G03_B_CLICK_V5,G03_B,温度计,I09,温度计，液柱蓝粉,Y,,I15,温度计,Y,Y
+SV_G04_A_CLICK_V5,G04_A,麦束,I11,一束麦穗,Y,,I07,一束麦穗,Y,Y
+SV_G04_B_CLICK_V5,G04_B,投票牌,I10,棒棒糖,N,圆牌在 110px 读成棒棒糖 → 改成长方形举牌,I02,四支举起的牌子（蓝／粉牌面），像举牌表态,Y,Y
+SV_G05_A_CLICK_V5,G05_A,蛋篮,I24,一篮蛋,Y,,I17,一篮蛋＋篮外一颗,Y,Y
+SV_G05_B_CLICK_V5,G05_B,放大镜,I15,放大镜，里面蓝点粉点,Y,,I22,放大镜里的蓝粉点,Y,Y
+SV_G06_A_CLICK_V5,G06_A,列车,I01,火车（带速度线）,Y,,I14,火车,Y,Y
+SV_G06_B_CLICK_V5,G06_B,火苗,I14,营火,Y,,I21,营火,Y,Y
+SV_G07_A_CLICK_V5,G07_A,船锚,I13,船锚,Y,,I24,船锚,Y,Y
+SV_G07_B_CLICK_V5,G07_B,跷跷板,I06,跷跷板，一边蓝球一边粉球,Y,,I12,跷跷板,Y,Y
+SV_G08_A_CLICK_V5,G08_A,桌历,I20,月历／桌历,Y,,I16,桌历，一格被钉住,Y,Y
+SV_G08_B_CLICK_V5,G08_B,麦克风,I18,麦克风＋小气泡,Y,,I20,麦克风＋气泡,Y,Y
+SV_G09_A_CLICK_V5,G09_A,骨牌,I21,一排倒下的小板子，太扁太小，认不出是骨牌,N,板子太扁太小认不出 → 改 4 片更高更宽的板,I11,一排正在倒下的骨牌（也可能被看成书）,Y,Y（板子在 110px 也可能被看成倒下的书，但「一整排一起倒」的意思仍在）
+SV_G09_B_CLICK_V5,G09_B,指南针,I05,指南针,Y,,I03,指南针,Y,Y
+SV_G10_A_CLICK_V5,G10_A,积木塔,I03,一叠砖块／积木，看不出要倒,N,读成一叠砖、看不出要倒 → 层数减少、方块加大、上半截斜 16°、一块推出侧边,I05,往右歪的积木塔，一块被推出来,Y,Y（塔身较瘦，但「歪了要倒」看得出）
+SV_G10_B_CLICK_V5,G10_B,投票箱,I19,投票箱插蓝粉票,Y,,I06,投票箱插蓝粉票,Y,Y
+SV_G11_A_CLICK_V5,G11_A,气球,I04,气球＋一根针,Y,,I23,气球＋针,Y,Y
+SV_G11_B_CLICK_V5,G11_B,芯片,I16,芯片＋两个对话气泡,Y,,I08,芯片＋蓝粉对话气泡,Y,Y
+SV_G12_A_CLICK_V5,G12_A,秤砣弹簧,I07,秤砣压着弹簧,Y,,I04,秤砣压弹簧,Y,Y（「被压住、想减轻」要配 Title 才完整）
+SV_G12_B_CLICK_V5,G12_B,风向袋,I12,风向袋（彩条）,Y,,I19,风向袋,Y,Y

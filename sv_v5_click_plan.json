@@ -1,0 +1,174 @@
+{
+  "campaign": {
+    "name": "STOCKVOICE_US_CONTEXT_CLICK_V5",
+    "status": "paused",
+    "objective": "clicks",
+    "bidding_type": "clicks",
+    "billing_event_type": "click",
+    "conversion_event_setting_ids": [
+      "6accecae45a481a083532e54b2805a6b",
+      "6accec10503081a091bf9eb412253ada",
+      "6accec7c23c881a0a0b4df2fddf14cb9"
+    ],
+    "budget": {
+      "daily_spend_limit_micros": 720000000
+    },
+    "targeting": {
+      "locations": {
+        "countries": [
+          "TW",
+          "US"
+        ]
+      }
+    },
+    "landing_page_configuration": {
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_id={campaign_id}"
+    }
+  },
+  "ad_groups": [
+    {
+      "group_id": "G01",
+      "name": "g01_buy_after_rally",
+      "context_hints": [
+        "使用者在问一只已经大涨的美股现在还能不能买：股价创新高、连涨或财报后跳空，担心现在追会被套、买在山顶，后悔之前没买；会提到自己的成本、手上现金和打算放多久，问要不要分批、等回调还是先进一部分、跌了怎么办。常见于 NVDA、TSLA、META 这类大型科技股。"
+      ],
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g01_buy_after_rally&utm_content={ad_id}&utm_id={campaign_id}",
+      "ads": [
+        {
+          "name": "SV_G01_A_CLICK_V5",
+          "title": "涨这么多，现在追会被套吗？",
+          "body": "后悔之前没买，又怕买在山顶。不替你决定，先想好放多久、分几批，再定跌了怎么做。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G01_A_CLICK_V5.png"
+        },
+        {
+          "name": "SV_G01_B_CLICK_V5",
+          "title": "股声：追高前看各方当时怎么说",
+          "body": "追高前，先看华语KOL在类似高点说过什么，观点叠在真实走势上对照。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G01_B_CLICK_V5.png"
+        }
+      ]
+    },
+    {
+      "group_id": "G02",
+      "name": "g02_hold_or_cut",
+      "context_hints": [
+        "使用者手上的美股跌了或被套，在决定要撑、认赔、cut loss 还是攤平：会讲成本价和现价、亏了多少、这笔占账户几成，常说睡不好、不甘心、卖了又怕弹回去；有时是财报后跳空大跌或大盘急跌，问要不要先减一半、停损设在哪。常见于 TSLA、PLTR、META 这类波动大的持股；也包括 AI 解释板块重挫后，使用者说出自己持有那只、问要不要减。"
+      ],
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g02_hold_or_cut&utm_content={ad_id}&utm_id={campaign_id}",
+      "ads": [
+        {
+          "name": "SV_G02_A_CLICK_V5",
+          "title": "跌成这样，要认赔还是撑住？",
+          "body": "成本在上面、天天睡不好。不替你决定，先算这笔占多少、理由还在不在，再定停损线。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G02_A_CLICK_V5.png"
+        },
+        {
+          "name": "SV_G02_B_CLICK_V5",
+          "title": "股声：被套时看看多空各几位",
+          "body": "被套时，先看华语KOL最近看多看空各几位、理由是什么，多空温度和走势一起看。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G02_B_CLICK_V5.png"
+        }
+      ]
+    },
+    {
+      "group_id": "G04",
+      "name": "g04_take_profit",
+      "context_hints": [
+        "使用者的美股赚了很多，在想要不要落袋：赚了一倍、三倍，仓位越涨越重，目标价到了或财报前想锁住获利；会讲成本和现价、占资产几成、之后有没有要用钱，问要卖一半、卖到什么比例、stop loss 设在哪才能保住获利；常见是 NVDA、AVGO、PLTR 这类涨多的股票。"
+      ],
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g04_take_profit&utm_content={ad_id}&utm_id={campaign_id}",
+      "ads": [
+        {
+          "name": "SV_G04_A_CLICK_V5",
+          "title": "赚了一倍，要不要先落袋？",
+          "body": "一只股票快占账户一半，卖了又怕再涨。先定睡得着的比例，再决定卖多少。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G04_A_CLICK_V5.png"
+        },
+        {
+          "name": "SV_G04_B_CLICK_V5",
+          "title": "股声：落袋前看多空有没有变",
+          "body": "落袋前，先看华语KOL现在还看多的有几位、理由变了没，多空温度和走势一起看。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G04_B_CLICK_V5.png"
+        }
+      ]
+    },
+    {
+      "group_id": "G06",
+      "name": "g06_everyone_talking",
+      "context_hints": [
+        "使用者看到身边都在聊某一只美股：群里、同事、家长群或网上大家都在买，说一个月赚了几成，自己还没买、怕错过，问现在上车会不会太晚、要投多少、能不能 all in；常见是 PLTR、MSTR、COIN 这类热门股或新题材。"
+      ],
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g06_everyone_talking&utm_content={ad_id}&utm_id={campaign_id}",
+      "ads": [
+        {
+          "name": "SV_G06_A_CLICK_V5",
+          "title": "群里都在买，现在上车太晚吗？",
+          "body": "有人说一个月赚了四成，你还没买。先想这笔最多能跌多少，再决定只买一点还是观望。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G06_A_CLICK_V5.png"
+        },
+        {
+          "name": "SV_G06_B_CLICK_V5",
+          "title": "股声热度榜：大家在聊哪几只",
+          "body": "跟风前，先看近24小时热度榜，再看华语KOL对它看多看空的理由。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G06_B_CLICK_V5.png"
+        }
+      ]
+    },
+    {
+      "group_id": "G08",
+      "name": "g08_before_after_earnings",
+      "context_hints": [
+        "对话从有什么可以投、现在能不能进或财报季要注意什么开始，AI 提到财报季时程（金融股先、医药股后）并列出 JPM、LLY、MU 等名字后，使用者挑其中一只问：财报前先进场还是等财报出来、财报会不会大涨、财报当天怎么做，并说出打算投入的金额与期限。"
+      ],
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g08_before_after_earnings&utm_content={ad_id}&utm_id={campaign_id}",
+      "ads": [
+        {
+          "name": "SV_G08_A_CLICK_V5",
+          "title": "财报前先买，还是等财报后？",
+          "body": "期望值高时，好也可能跌。先想清楚要看哪几个财报数字，再决定财报前后怎么做。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G08_A_CLICK_V5.png"
+        },
+        {
+          "name": "SV_G08_B_CLICK_V5",
+          "title": "股声：财报前后看各方怎么解读",
+          "body": "财报前后，先看华语KOL对这只怎么解读、多空温度有没有变，再对照真实走势。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G08_B_CLICK_V5.png"
+        }
+      ]
+    },
+    {
+      "group_id": "G10",
+      "name": "g10_market_panic_or_heat",
+      "context_hints": [
+        "对话从「美股是不是要崩了」「大跌我要怎么办」「现在是不是过热了」开始，AI 刚校正事实（指数其实只小跌、利率在高点、只有少数板块重挫）并给了框架后，使用者还没讲到具体个股，在问大盘会不会继续跌、要不要先走，或是不是只有自己这么慌；多半持有 SPY、QQQ、VOO 这类指数 ETF。"
+      ],
+      "query_string_template": "utm_source=openai&utm_medium=paid_conversation&utm_campaign=stockvoice_us_context_click&utm_term=g10_market_panic_or_heat&utm_content={ad_id}&utm_id={campaign_id}",
+      "ads": [
+        {
+          "name": "SV_G10_A_CLICK_V5",
+          "title": "美股是不是要崩了？",
+          "body": "看到大跌新闻时，先分清是大盘在跌还是你的持股在跌，再定要不要动。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G10_A_CLICK_V5.png"
+        },
+        {
+          "name": "SV_G10_B_CLICK_V5",
+          "title": "股声：慌的时候看SPY、QQQ多空",
+          "body": "大跌时，先看华语KOL对SPY、QQQ的看多看空人数，再对照真实走势。",
+          "target_url": "https://stockvoice.cmoney.tw/",
+          "image": "ads_images_v6/masters/SV_G10_B_CLICK_V5.png"
+        }
+      ]
+    }
+  ]
+}

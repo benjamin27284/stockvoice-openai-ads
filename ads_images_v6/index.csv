@@ -1,0 +1,25 @@
+﻿ad_name,group_id,strategy,object,drawn_elements,reuse_from,file,file_1x,accent_pair,v5_image
+SV_G01_A_CLICK_V5,G01,A,山顶旗,三角山＋金色雪顶＋阴面山脊＋峰顶金旗,SV-09（V5 G01 B → A；旗橙→金）,masters/SV_G01_A_CLICK_V5.png,cards/SV_G01_A_CLICK_V5_dark_1x.png,N,SV-10
+SV_G01_B_CLICK_V5,G01,B,录音带,卡带外框＋窗＋两个卷轴（蓝／粉）＋上方双左三角倒带符号,SV-21（卷轴金→蓝粉）,masters/SV_G01_B_CLICK_V5.png,cards/SV_G01_B_CLICK_V5_dark_1x.png,Y,SV-09
+SV_G02_A_CLICK_V5,G02,A,雨伞,撑开的伞面主色＋金色伞片＋勾柄＋灰色雨线,SV-33（雨线蓝→灰）,masters/SV_G02_A_CLICK_V5.png,cards/SV_G02_A_CLICK_V5_dark_1x.png,N,SV-33
+SV_G02_B_CLICK_V5,G02,B,天平,上方支点＋横梁往蓝侧沉＋两盘：3 颗蓝珠／2 颗粉珠,SV-05（盘改金、盘内改放珠子）,masters/SV_G02_B_CLICK_V5.png,cards/SV_G02_B_CLICK_V5_dark_1x.png,Y,SV-36
+SV_G03_A_CLICK_V5,G03,A,购物车,主色网篮＋金色把手与车架＋两轮；篮里两件、上方一件正落下,new,masters/SV_G03_A_CLICK_V5.png,cards/SV_G03_A_CLICK_V5_dark_1x.png,N,SV-12
+SV_G03_B_CLICK_V5,G03,B,温度计,主色管＋金泡＋液柱下蓝上粉＋刻度短条,SV-17（液柱三段→蓝粉两段）,masters/SV_G03_B_CLICK_V5.png,cards/SV_G03_B_CLICK_V5_dark_1x.png,Y,SV-17
+SV_G04_A_CLICK_V5,G04,A,麦束,七根主色麦秆＋金色麦穗＋中段金绳结,new,masters/SV_G04_A_CLICK_V5.png,cards/SV_G04_A_CLICK_V5_dark_1x.png,N,SV-13
+SV_G04_B_CLICK_V5,G04,B,投票牌,四支长柄圆牌高低错落：主色圆框＋3 蓝 1 粉牌面,new,masters/SV_G04_B_CLICK_V5.png,cards/SV_G04_B_CLICK_V5_dark_1x.png,Y,SV-05
+SV_G05_A_CLICK_V5,G05,A,蛋篮,金色编织篮＋提把＋篮内四颗主色蛋＋篮外一颗,new,masters/SV_G05_A_CLICK_V5.png,cards/SV_G05_A_CLICK_V5_dark_1x.png,N,SV-15
+SV_G05_B_CLICK_V5,G05,B,放大镜,金色镜框＋主色握柄；镜片里 3 蓝点 2 粉点,new（不沿用 SV-02 压纸版）,masters/SV_G05_B_CLICK_V5.png,cards/SV_G05_B_CLICK_V5_dark_1x.png,Y,SV-16
+SV_G06_A_CLICK_V5,G06,A,列车,长车厢＋圆头＋窗带＋金色腰线与车轮＋轨道枕木＋车尾速度线,SV-10（V5 G01 A → G06 A）,masters/SV_G06_A_CLICK_V5.png,cards/SV_G06_A_CLICK_V5_dark_1x.png,N,SV-26
+SV_G06_B_CLICK_V5,G06,B,火苗,金色火焰＋橙色内焰＋交叉主色柴,SV-25（不变；R-B 例外）,masters/SV_G06_B_CLICK_V5.png,cards/SV_G06_B_CLICK_V5_dark_1x.png,N,SV-25
+SV_G07_A_CLICK_V5,G07,A,船锚,金色顶环＋金横杆＋主色锚干＋主色弧形锚冠＋两个金锚爪,new,masters/SV_G07_A_CLICK_V5.png,cards/SV_G07_A_CLICK_V5_dark_1x.png,N,SV-34
+SV_G07_B_CLICK_V5,G07,B,跷跷板,主色板往蓝侧沉：3 颗蓝球／2 颗粉球＋金色支点底座,SV-03（V5 G12 A → G07 B；蓝 5→3）,masters/SV_G07_B_CLICK_V5.png,cards/SV_G07_B_CLICK_V5_dark_1x.png,Y,SV-35
+SV_G08_A_CLICK_V5,G08,A,桌历,两个装订环＋金色页首＋4×3 格；一格金色并被图钉钉住,new,masters/SV_G08_A_CLICK_V5.png,cards/SV_G08_A_CLICK_V5_dark_1x.png,N,SV-11
+SV_G08_B_CLICK_V5,G08,B,麦克风,立式麦克风＋金色网罩条＋蓝／粉／灰三个小气泡,SV-01（底座改金）,masters/SV_G08_B_CLICK_V5.png,cards/SV_G08_B_CLICK_V5_dark_1x.png,Y,SV-31
+SV_G09_A_CLICK_V5,G09,A,骨牌,五片素面长方板（无点数、无纹路）：前三片已倒几乎平躺、第四片正在倒、最后一片还立着；主色／金交替；无地线,new,masters/SV_G09_A_CLICK_V5.png,cards/SV_G09_A_CLICK_V5_dark_1x.png,N,SV-28
+SV_G09_B_CLICK_V5,G09,B,指南针,主色外圈＋金刻度＋深色盘面＋蓝粉指针＋金轴,SV-36（不变）,masters/SV_G09_B_CLICK_V5.png,cards/SV_G09_B_CLICK_V5_dark_1x.png,Y,SV-02
+SV_G10_A_CLICK_V5,G10,A,积木塔,十层叠叠乐：主色长条／金色三方块交替；中段抽掉一块、上半截倾斜,new,masters/SV_G10_A_CLICK_V5.png,cards/SV_G10_A_CLICK_V5_dark_1x.png,N,SV-19
+SV_G10_B_CLICK_V5,G10,B,投票箱,主色箱体＋金盖宽投口＋斜插的蓝、粉两张票,SV-20（不变）,masters/SV_G10_B_CLICK_V5.png,cards/SV_G10_B_CLICK_V5_dark_1x.png,Y,SV-20
+SV_G11_A_CLICK_V5,G11,A,气球,吹得很大的金色气球＋主色高光＋绳＋右上灰色针尖靠近,new,masters/SV_G11_A_CLICK_V5.png,cards/SV_G11_A_CLICK_V5_dark_1x.png,N,SV-29
+SV_G11_B_CLICK_V5,G11,B,芯片,方形主色封装＋深色晶粒＋金色核心＋四边金针脚；上方一蓝一粉对话气泡,new,masters/SV_G11_B_CLICK_V5.png,cards/SV_G11_B_CLICK_V5_dark_1x.png,Y,SV-07
+SV_G12_A_CLICK_V5,G12,A,秤砣弹簧,金色秤砣（带提环）压在顶板上＋被压扁的主色弹簧＋底板,new,masters/SV_G12_A_CLICK_V5.png,cards/SV_G12_A_CLICK_V5_dark_1x.png,N,SV-03
+SV_G12_B_CLICK_V5,G12,B,风向袋,主色杆＋金顶球；袋身金／主色条纹，袋尾一蓝一粉两条长飘带,SV-18（袋尾加蓝粉飘带）,masters/SV_G12_B_CLICK_V5.png,cards/SV_G12_B_CLICK_V5_dark_1x.png,Y,SV-18

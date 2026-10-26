@@ -1,0 +1,31 @@
+# Whitelist repo: StockVoice (股聲) OpenAI Ads portfolio only.
+# Everything is ignored unless explicitly allowed below.
+*
+!.gitignore
+!README.md
+
+# --- 成效報告 / 測試計畫 ---
+!股聲_*
+!StockVoice_*
+!StockVoice_意图复盘_V16_附件/**
+
+# --- 廣告素材（卡片圖、盲測、對比度稽核）---
+!ads_images_v6/
+!ads_images_v6/**
+
+# --- OpenAI Ads API 自動化腳本與投放計畫 ---
+!push_stockvoice_v5_click.py
+!copy_stockvoice_v5_by_country.py
+!push_sv_v6_func_hint_groups.py
+!push_sv_v6_func_campaign.py
+!update_sv_v5_country_utm.py
+!sv_v5_click_plan.json
+!sv_v6_func_plan.json
+!sv_v6_func_campaign_plan.json
+
+# never, even if matched above
+ads-manager-api-key.txt
+*.key
+.env*
+__pycache__/
+~$*

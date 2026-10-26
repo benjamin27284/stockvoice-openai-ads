@@ -1,0 +1,214 @@
+<title>股聲 ChatGPT 廣告首週回報</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;800&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single reading column (~720px) like an internal memo; data blocks break out to 880px. */
+:root{
+  --bg:#f6f7f8; --surface:#ffffff; --fg:#1b2329; --muted:#5b6770; --line:#dde2e6;
+  --accent:#1f5f8b; --accent-soft:#e3eef6; --warn:#a2541a; --warn-soft:#f8ece1;
+  --good:#2f7a4f; --bar:#9fb8ca;
+  --display:"Noto Serif TC","Songti TC",serif;
+  --body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12171b; --surface:#1a2126; --fg:#e4e9ec; --muted:#9aa7b0; --line:#2c363d;
+  --accent:#7db4dc; --accent-soft:#1d3342; --warn:#e3a06a; --warn-soft:#3a2a1d;
+  --good:#7fc69b; --bar:#3f6680; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#12171b; --surface:#1a2126; --fg:#e4e9ec; --muted:#9aa7b0; --line:#2c363d;
+  --accent:#7db4dc; --accent-soft:#1d3342; --warn:#e3a06a; --warn-soft:#3a2a1d;
+  --good:#7fc69b; --bar:#3f6680; color-scheme:dark }
+
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:40px 64px}
+.wrap{max-width:880px;margin:0 auto;display:grid;gap:48px}
+.col{max-width:720px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.35;margin:0}
+h1{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800}
+h2{font-size:1.35rem;font-weight:800;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:1.05rem;font-weight:600}
+p{margin:0}
+section{display:grid;gap:20px;min-width:0}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;color:var(--muted);font-weight:500}
+header{display:grid;gap:12px}
+.meta{color:var(--muted);font-size:.9rem}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:2px}
+.kpi b{font-family:var(--mono);font-size:1.45rem;font-weight:500}
+.kpi span{font-size:.82rem;color:var(--muted)}
+.kpi.warn b{color:var(--warn)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:.82rem;letter-spacing:.03em;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.r,th.r{text-align:right}
+td.num{white-space:nowrap}
+tr.hi td{background:var(--accent-soft)}
+
+.learn{display:grid;gap:14px;padding-top:4px}
+.learn + .learn{border-top:1px dashed var(--line);padding-top:24px}
+.learn h3{display:flex;gap:10px}
+.learn h3 .n{font-family:var(--mono);color:var(--accent);font-weight:500}
+.note{font-size:.9rem;color:var(--muted)}
+
+.callout{background:var(--warn-soft);border-radius:6px;padding:14px 18px;display:grid;gap:6px}
+.callout strong{color:var(--warn)}
+
+/* bar charts drawn to scale with CSS widths */
+.bars{display:grid;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
+.bar{display:grid;grid-template-columns:minmax(0,11em) 1fr 4.5em;gap:12px;align-items:center;font-size:.88rem}
+.bar .track{height:14px;background:var(--bg);border-radius:3px;overflow:hidden}
+.bar .fill{height:100%;background:var(--bar)}
+.bar.top .fill{background:var(--accent)}
+.bar .v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.axis{font-size:.75rem;color:var(--muted);display:flex;justify-content:space-between;margin-left:calc(min(11em,35%) + 12px);margin-right:calc(4.5em + 12px)}
+@media (max-width:520px){.bar{grid-template-columns:minmax(0,7em) 1fr 3.8em}.axis{margin-left:calc(7em + 12px);margin-right:calc(3.8em + 12px)}}
+
+.funnel{display:grid;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
+.step{display:grid;grid-template-columns:minmax(0,1fr);gap:4px}
+.step .lbl{display:flex;justify-content:space-between;gap:12px;font-size:.88rem}
+.step .lbl .loss{color:var(--muted);text-align:right}
+.step .track{height:12px;background:var(--bg);border-radius:3px;overflow:hidden}
+.step .fill{height:100%;background:var(--accent);min-width:2px}
+.step.drop .fill{background:var(--warn)}
+
+ol.next{margin:0;padding-left:1.4em;display:grid;gap:12px}
+ol.next li::marker{font-family:var(--mono);color:var(--accent)}
+ol.next b{font-weight:700}
+.decide{border:1px solid var(--accent);border-radius:6px;padding:14px 18px}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:grid;gap:4px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="wrap">
+<header class="col">
+  <div class="eyebrow">股聲 OpenAI Ads · 首週回報</div>
+  <h1>ChatGPT 對話廣告首週回報</h1>
+  <p class="meta">2026-10-15 · 10/13 20:49 上線至 10/15，約 2.6 天 · 6 組意圖 × A/B 兩種標題 · 目前只能投台灣</p>
+  <p>目標：驗證 ChatGPT 對話情境廣告能不能為股聲帶人：① 哪些情境、哪種標題用戶會點 ② 點進來的人能不能留下</p>
+</header>
+
+<section>
+  <h2>現況</h2>
+  <div class="kpis">
+    <div class="kpi"><span>曝光 / 點擊</span><b>13,490 / 176</b></div>
+    <div class="kpi"><span>點擊率（Mike 0.98%）</span><b>1.30%</b></div>
+    <div class="kpi"><span>CPC（Mike NT$37.5）</span><b>NT$48.3</b></div>
+    <div class="kpi"><span>花費</span><b>NT$5,025</b></div>
+    <div class="kpi warn"><span>互動率（原有流量 69%）</span><b>~30%</b></div>
+    <div class="kpi warn"><span>新訪客 → 追蹤股票</span><b>1 / 145</b></div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>項目</th><th>內容</th></tr></thead>
+    <tbody>
+      <tr><td>目標</td><td>驗證 ChatGPT 對話情境廣告能不能為股聲帶人：① 哪些情境、哪種標題用戶會點 ② 點進來的人能不能留下</td></tr>
+      <tr><td>進度</td><td>10/13 20:49 上線至 10/15，約 2.6 天；6 組意圖 × A/B 兩種標題；目前只能投台灣</td></tr>
+      <tr><td>成效</td><td>曝光 13,490、點擊 176、點擊率 1.30%（同平台 Mike campaign 0.98%）；CPC NT$48.3（Mike NT$37.5）；花費 NT$5,025</td></tr>
+      <tr><td>站內</td><td>直接流量日均 8 → 約 60，跟著廣告點擊上升；互動率修正後約 30%（10/13–14，原有流量 69%），原寫的 16.6% 被兩個追蹤問題壓低（見 Learning 4）；新訪客 145 人只有 1 人成功追蹤股票。</td></tr>
+      <tr class="hi"><td style="white-space:nowrap">Next step</td><td>context hint 聚焦會聊美股的用戶，並加入更多「正要做決定」的情境；落地頁依情境直達對應內容，不再導首頁。</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Learnings</h2>
+
+  <div class="learn">
+    <h3><span class="n">1</span>相較於直接打品牌廣告，用戶更傾向點擊出於他意圖的文案</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>標題寫法</th><th>例</th><th class="r">曝光</th><th class="r">點擊率</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td>用戶口吻的問句</td><td>「賺了一倍，要不要先落袋？」</td><td class="r num">3,631</td><td class="r num">1.71%</td></tr>
+        <tr><td>品牌型</td><td>「股聲：落袋前看多空有沒有變」</td><td class="r num">9,859</td><td class="r num">1.16%</td></tr>
+      </tbody>
+    </table></div>
+    <p class="col">6 組中 4 組問句較高；落袋組差最多，1.73% 對 0.43%。系統目前把 73% 曝光給品牌型，問句樣本還少。</p>
+  </div>
+
+  <div class="learn">
+    <h3><span class="n">2</span>用戶手上有決定要做時最會點</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>意圖</th><th>用戶當下的情境</th><th class="r">曝光</th><th class="r">點擊率</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td>財報前後要不要進出</td><td>事件逼近、要決定</td><td class="r num">1,990</td><td class="r num">2.06%</td></tr>
+        <tr class="hi"><td>被套：撐、認賠或攤平</td><td>已持有、正在賠</td><td class="r num">534</td><td class="r num">1.87%</td></tr>
+        <tr><td>賺很多要不要落袋</td><td>已持有、正在賺</td><td class="r num">870</td><td class="r num">1.38%</td></tr>
+        <tr><td>大漲後還能不能追</td><td>還沒買</td><td class="r num">3,861</td><td class="r num">1.17%</td></tr>
+        <tr><td>身邊都在聊、怕錯過</td><td>還沒買</td><td class="r num">5,263</td><td class="r num">1.10%</td></tr>
+        <tr><td>大盤崩或過熱要不要先走</td><td>大盤情緒</td><td class="r num">972</td><td class="r num">1.03%</td></tr>
+      </tbody>
+    </table></div>
+    <div class="bars" role="img" aria-label="各意圖點擊率長條圖">
+      <div class="bar top"><span>財報前後</span><div class="track"><div class="fill" style="width:82.4%"></div></div><span class="v">2.06%</span></div>
+      <div class="bar top"><span>被套</span><div class="track"><div class="fill" style="width:74.8%"></div></div><span class="v">1.87%</span></div>
+      <div class="bar"><span>落袋</span><div class="track"><div class="fill" style="width:55.2%"></div></div><span class="v">1.38%</span></div>
+      <div class="bar"><span>大漲追高</span><div class="track"><div class="fill" style="width:46.8%"></div></div><span class="v">1.17%</span></div>
+      <div class="bar"><span>身邊都在聊</span><div class="track"><div class="fill" style="width:44%"></div></div><span class="v">1.10%</span></div>
+      <div class="bar"><span>大盤崩或過熱</span><div class="track"><div class="fill" style="width:41.2%"></div></div><span class="v">1.03%</span></div>
+      <div class="axis"><span>0%</span><span>1.25%</span><span>2.5%</span></div>
+    </div>
+    <p class="col">整體 1.30%。只有財報組高於「身邊都在聊」達統計顯著，其他組曝光還不到 1,000 次。</p>
+  </div>
+
+  <div class="learn">
+    <h3><span class="n">3</span>點擊有帶人進站，但多數人沒留下</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>GA4 直接流量</th><th class="r">上線前（9/29–10/12）</th><th class="r">上線後（10/13 21 時起）</th></tr></thead>
+      <tbody>
+        <tr><td>互動率</td><td class="r num">69%</td><td class="r num">30%（10/13–14）</td></tr>
+        <tr><td>重要活動／百次工作階段</td><td class="r num">11.6</td><td class="r num">1.3（10/13 起）</td></tr>
+      </tbody>
+    </table></div>
+    <h3>新訪客轉化漏斗（全站，10/13 起，以人數計）</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>步驟</th><th class="r">人數</th><th>流失在哪</th></tr></thead>
+      <tbody>
+        <tr><td>新訪客</td><td class="r num">145</td><td>—</td></tr>
+        <tr><td>看到新手引導彈窗</td><td class="r num">75</td><td>跳過 54（72%），完成 13</td></tr>
+        <tr><td>看到下載 App 彈窗</td><td class="r num">64</td><td>關掉 53，點去商店 3</td></tr>
+        <tr><td>首頁文章卡片</td><td class="r num">曝光 566 次</td><td>點擊 14 次（2.5%）</td></tr>
+        <tr><td>點登入</td><td class="r num">8</td><td>登入成功 3</td></tr>
+        <tr class="hi"><td>成功追蹤股票（重要事件）</td><td class="r num">1</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+    <p class="col">用戶在 ChatGPT 問的是一個具體決定，點進來先被兩個彈窗擋住，關掉後看到的是一般動態。75% 流量是手機 Safari，可能是 ChatGPT App 內開的瀏覽器，登入 8 → 成功 3 可能也卡在這裡（未驗證）。</p>
+  </div>
+
+  <div class="learn">
+    <h3><span class="n">4</span>追蹤問題讓互動率和轉化都被低估</h3>
+    <p class="col">上線後多出約 110 個 Unassigned 工作階段（上線前兩週只有 21 個），幾乎都記成「沒有互動」，但其實有約 2,500 秒停留、平均每次 7.5 個事件（看圖表、搜尋、追蹤股票）。直接流量加 Unassigned 約 270 個工作階段，比廣告點擊 176 還多，等於一次造訪被拆成約 1.5 段，分母被灌大。另外，GA4 的重要事件只有 first_open（App）和 stock_follow_success，網頁版的轉化其實還沒定義。</p>
+  </div>
+</section>
+
+<section>
+  <h2>為什麼會這樣</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>推測</th><th>依據</th></tr></thead>
+    <tbody>
+      <tr><td>問句和用戶在對話裡的問題接得上</td><td>A 版直接復述用戶處境（「賺了一倍，要不要先落袋？」）；品牌型要用戶先認識股聲</td></tr>
+      <tr><td>有決定要做、有時間壓力時，最想看別人怎麼說</td><td>點擊率最高的三組都是財報日、已經賠錢、已經賺錢這類需要馬上決定的時刻</td></tr>
+      <tr><td>落地頁沒接住問題</td><td>用戶在 ChatGPT 問的是一個具體決定，點進來卻是首頁，還先跳新手引導和下載 App 兩個彈窗；互動率約 30%，145 位新訪客只有 1 人追蹤股票</td></tr>
+      <tr><td>只能投台灣可能是互動率低的主因</td><td>台灣用戶在 ChatGPT 裡大多在聊台股。像「身邊都在聊」「大漲能不能追」這類意圖，很可能配到台積電、0050 之類的台股對話。用戶點進來發現是美股網站，自然不會留下</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note col">以上從廣告與 GA4 數據推出，還沒有用 utm 資料或用戶路徑驗證。</p>
+</section>
+
+<section class="col">
+  <h2>Next steps</h2>
+  <ol class="next">
+    <li><b>context hint：</b>增加更多「用戶正要做決定」的情境，讓更多用戶觸到。候選：FOMC、CPI 前要不要先減碼；公司 RSU 太集中要不要賣；想追蹤持股又不想一直盯盤。每組看哪些情境曝光多、哪些標題點擊高。修正 context hint 把意圖聚焦在會聊美股的用戶上，避免再次觸到聊台股的用戶。</li>
+    <li><b>落地頁：</b>依情境直達對應內容（例：財報廣告 → /stocks/{代號} 或該檔財報前後各方觀點；被套廣告 → 該檔多空討論），不再導首頁；用 utm 新資料確認點進來的人有沒有留下。</li>
+  </ol>
+</section>
+
+<footer>
+  <span>資料：OpenAI Ads API insights（10/13–15）、GA4 StockVoice。內容同《股聲_OpenAI_Ads_首週回報_2026-10-15.docx》。</span>
+</footer>
+</div>

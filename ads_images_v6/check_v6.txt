@@ -1,0 +1,19 @@
+PASS  E1 24 × (PNG 1080² RGB no EXIF + JPG q92 + 256² PNG) — bad=[]
+PASS  E2 cards 72 (dark 2×, dark 1×, light 1×) / audit 96; Title 1 line, Desc ≤2 lines; rendered text == copy_v5 (0 diff) — cards=72 size_bad=[] text/layout diff=[] audit=96
+PASS  E3 no text-drawing call in icons_v6.py or the primitives it imports (AST) — calls=[]
+PASS  E4 contrast subject / background ≥4.5 (median subject luminance) — min 9.09 (G02_A), max 9.58
+PASS  E5 keyline (#93c89e @40 %, 3 px) on all four edges, 24/24 — bad=[]
+PASS  E6 subject long side 55–72 % of tile — min 65 max 72; out={}
+PASS  E7 main + gold ≥60 % of subject pixels (strict: RGB distance ≤40 to #93c89e / #d8b25a), 24/24 — min 61 (G11_B); below={}; loose (incl. gold highlight) min 61
+PASS  E8a R-A: A images have no blue / pink pixels (≤5 px within distance 40 at 540²), 12/12 — {}
+PASS  E8b R-B: every B whose Description says 多空 (G06 B excepted) has both blue and pink (≥200 px each at 540²), 9/9; G01 B, G11 B by design too — G02_B 2396/1201; G03_B 2728/2941; G04_B 8386/2781; G05_B 6353/4226; G07_B 6986/4656; G08_B 4961/3120; G09_B 2625/2640; G10_B 9398/9528; G12_B 2339/2433; G01_B 4593/4591; G11_B 7301/7382
+PASS  E9 red / green up-down colours 0; banned objects 0 — up/down px={}; banned=[]
+PASS  E10 24 distinct core nouns; A ≠ B in every group — 山顶旗、录音带、雨伞、天平、购物车、温度计、麦束、投票牌、蛋篮、放大镜、列车、火苗、船锚、跷跷板、桌历、麦克风、骨牌、指南针、积木塔、投票箱、气球、芯片、秤砣弹簧、风向袋
+PASS  E11* tp_execute's own 110 px blind look (shuffled, written before the key): round 1 ≥20/24, after redraw ≥23/24 — round 1 21/24, final 24/24; redrawn ['G04_B', 'G09_A', 'G10_A']
+PASS  E11 tp_review object naming 24/24 (G09 A hesitant "maybe books" → S1 redraw)
+PASS  E12 tp_review: the four easy-mix pairs all told apart (the 24×24 title-matching test was replaced by the pair check in that round)
+PASS  E13 tp_review: B blue/pink "two sides" visible 8/9 at 110 px (G12 B windsock was the N → S2 redraw: blue + pink tail streamers)
+PASS  E14 tp_review recognise-own-situation 24/24 Y (tp_execute self-read: 24/24 Y)
+PASS  E15 overview_v6 png+html 12 groups × A/B with 1× card, V6 110 px and V5 old 110 px; new vs reused marked; strip, 12 group sheets, index 24 rows — overview (1816, 3142); new 12 / reused 12
+PASS  E16 V1–V5 files unchanged vs ads_images_v6/md5_before.txt, except the 6 files of the approved V6 wire-in (V5 xlsx/csv, copy_v5.csv, make_v5 / build_tables_v5 / check_v5_final) — 653 files; wire-in changed 6/6; other changes=[]
+N/A  E17 Step 1 sample gate — the user approved the option-1 objects directly (2026-10-13), so the 12-image sample round was not run; masters were rendered in one batch
