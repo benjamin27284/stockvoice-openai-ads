@@ -117,4 +117,4 @@
 | 8 | GA4 的 UTM 白名單（utm_term、utm_content、新的 campaign 名稱）。優先度比較低：每則廣告的點擊和 Pixel 事件在 OpenAI 後台已經看得到 | 我 → 網站工程師 |
 
 ---
-資料來源：OpenAI Ads API insights（10/20 拉取，原始檔 `.work/insights_check_20261020.json`），GA4 property 539701546（`sessionManualSource = openai`，10/16–10/19）。10/20 的數據還在處理中，沒有納入。
+資料來源：OpenAI Ads API insights（10/20 拉取，原始檔 `.work/insights_check_20261020.json`），GA4（`sessionManualSource = openai`，10/16–10/19）。10/20 的數據還在處理中，沒有納入。
